@@ -160,6 +160,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 100px 0 100px 0;
 }
 
+.about .card {
+  background-color: #f7f7f7;
+  /* background: -webkit-linear-gradient(black, rgb(30, 30, 30), rgb(50, 50, 50)); */
+}
+
 .about .card-body {
   padding: 50px;
 }
@@ -168,8 +173,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 500;
   font-weight: bold;
   font-size: 30px;
+  background: -webkit-linear-gradient(left, #F43F5E, #C26DBC, #7E94D9);
+  background: -o-linear-gradient(right, #F43F5E, #C26DBC, #7E94D9);
+  background: -moz-linear-gradient(right, #F43F5E, #C26DBC, #7E94D9);
+  background: linear-gradient(to right, #F43F5E, #C26DBC, #7E94D9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.about .rectangle {
+  width: 100px;
+  height: 3px;
+  background: -webkit-linear-gradient(left, #F43F5E, #C26DBC, #7E94D9);
+  background: -o-linear-gradient(right, #F43F5E, #C26DBC, #7E94D9);
+  background: -moz-linear-gradient(right, #F43F5E, #C26DBC, #7E94D9);
+  background: linear-gradient(to right, #F43F5E, #C26DBC, #7E94D9); 
+}
+
 .about p {
+  /* color: #FECDD3; */
   font-weight: 300;
   font-size: 14px;
 }

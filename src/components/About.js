@@ -3,10 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 export const About = () => {
     return (
         <section className="about">
-            <Container className="card">
+            <Container className="card border-0">
                 <Row className="card-body">
                     <Col xs={12} md={4} xl={4}>
                         <h1 className="card-title">About Me</h1>
+                        <div className="rectangle"></div>
                     </Col>
                     <Col xs={12} md={8} xl={8}>
                         <p className="card-text">
