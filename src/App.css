@@ -1,7 +1,165 @@
-.App {
-  text-align: center;
+/* Custom Fonts */
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/font/Rubik-Medium.ttf");
+  font-weight: 500;
 }
 
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/font/Rubik-Light.ttf");
+  font-weight: 300;
+}
+
+/* Default CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: white;
+  color: black !important;
+  font-family: "Rubik";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+/* NavBar CSS */
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32 ease-in-out;
+}
+
+nav.navbar.scrolled {
+  padding: 0px 0;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 500;
+  font-weight: bold;
+  color: black !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link:active {
+  opacity: 1;
+}
+
+span.navbar-text {
+  display: flex;
+  align-items: center;
+}
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid black;
+  transition: all 300ms linear;
+  top: -2px;
+}
+
+nav.navbar .navbar-toggler-icon:focus {
+  border-bottom: 2px solid black;
+}
+
+nav.navbar .navbar-toggler-icon::after,
+nav.navbar .navbar-toggler-icon::before {
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 2;
+  transition: all 300ms linear;
+}
+
+nav.navbar .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(45deg);
+  background-color: black;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: black;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  border-color: transparent;
+}
+
+/* Banner CSS */
+.banner {
+  margin-top: 0;
+  padding: 160px 0 100px 0;
+}
+
+.banner h1, h2, p {
+  font-weight: 500;
+  font-weight: bold;
+}
+
+.banner h1 {
+  font-size: 45px;
+}
+
+.banner h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 16px;
+}
+
+.banner .my-name {
+  color: #C26DBC;
+}
+
+/* **************************************************************************************** */
+
+/* .App {
+  text-align: center;
+} */
+
+/* Below can be deleted */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
