@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/home_girl.jpg";
+import headerImg from "../assets/img/home_girl.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -54,7 +54,7 @@ export const Banner = () => {
                              majoring in software development
                         </p>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col xs={12} md={6} xl={5} className="d-flex justify-content-end">
                         <img src={headerImg} style={{width: "400px"}} alt="Header Img"/>
                     </Col>
                 </Row>

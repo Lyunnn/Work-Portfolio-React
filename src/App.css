@@ -46,6 +46,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
+  background-color: #FBFBFC;
 }
 
 nav.navbar.scrolled {
@@ -129,6 +130,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 160px 0 100px 0;
+  background-color: #FBFBFC;
 }
 
 .banner h1, h2, p {
@@ -151,6 +153,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner .my-name {
   color: #C26DBC;
+}
+
+/* About CSS */
+.about {
+  padding: 100px 0 100px 0;
+}
+
+.about .card-body {
+  padding: 50px;
+}
+
+.about h1 {
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 30px;
+}
+.about p {
+  font-weight: 300;
+  font-size: 14px;
 }
 
 /* **************************************************************************************** */
