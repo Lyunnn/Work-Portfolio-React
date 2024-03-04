@@ -237,6 +237,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill h6 {
   font-size: 10px;
+  padding-bottom: 20px;
+}
+
+.skill .card {
+  background-color: #f7f7f7;
 }
 
 .skill h5 {
@@ -251,16 +256,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill .card-body {
-  padding: 0 40px 0 40px;
+  padding: 0 40px 20px 40px;
 }
 
 /* Projects CSS */
+.project {
+  padding-bottom: 60px;
+}
+
 .project h1 {
   font-weight: 500;
   font-weight: bold;
   font-size: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   padding-left: 8px;
+  /* color: #F43F5E; */
 }
 
 .project h2 {
@@ -295,24 +305,68 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Test CSS */
-.test .navnav-pills {
-  width: 72%;
+.project .nav.nav-pills {
+  width: 80%;
   margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
+  border-radius: 10px;
   overflow: hidden;
+  padding-bottom: 50px;
 }
 
-.test .navnav-pills .nav-item {
+.project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
 
-.test .navnav-pills .nav-link {
+.project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
-  padding: 17px 0;
-  color: #282c34;
+  padding: 10px 0;
+  color: #7E94D9;
+  font-weight: bold;
   width: 100%;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+
+.project .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #C26DBC -5.91%, #7E94D9 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.project .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+
+.project .nav.nav-pills .nav-link.active {
+  color: white;
+  border: 1px solid #C26DBC;
+}
+
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid #c0c0c0;
+  border-radius: 10px 0px 0px 0px;
+}
+
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid #c0c0c0;
+  border-radius: 0px 10px 0px 0px;
 }
 
 

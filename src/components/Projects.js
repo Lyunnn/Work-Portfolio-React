@@ -1,4 +1,5 @@
-import { Container, Row, Col} from "react-bootstrap"
+import Nav from 'react-bootstrap/Nav';
+import { Container, Row, Col, Tab} from "react-bootstrap"
 import projImg1 from "../assets/img/proj1.png";
 import projImg2 from "../assets/img/proj2.png";
 import projImg3 from "../assets/img/proj3.png";
@@ -29,44 +30,70 @@ export const Projects = () => {
     ];
     return (
         <section className="project" id="projects">
-            <Container className="card">
-                <Col className="card-body d-flex">
-                    <div className="line"></div>
-                    <h1>Projects</h1>
-                </Col>
-                <Row className="card-body">
-                    <Col xs={12} md={6} xl={5} className="d-flex justify-content-center">
-                        <img src={projImg1} style={{width: "320px"}} alt="project_img1"></img>
+            <Container>
+                <Row>
+                    <Col>
+                    <Col className="card-body d-flex">
+                        <div className="line"></div>
+                        <h1>Projects</h1>
                     </Col>
-                    <Col xs={12} md={6} xl={7}>
-                        <h2>{projects[0].title}</h2>
-                        <h6>{projects[0].desc}</h6>
-                        <p>{projects[0].skill}</p>
-                    </Col>
-                </Row>
-                <Row className="card-body">
-                    <Col xs={12} md={6} xl={5} className="d-flex justify-content-center">
-                        <img src={projImg2} style={{width: "300px"}} alt="project_img2"></img>
-                    </Col>
-                    <Col xs={12} md={6} xl={7}>
-                        <h2>{projects[1].title}</h2>
-                        <h6>{projects[1].desc}</h6>
-                        <p>{projects[1].skill}</p>
-                        <span>{projects[1].type}</span>                        
-                    </Col>
-                </Row>
-                <Row className="card-body">
-                    <Col xs={12} md={6} xl={5} className="d-flex justify-content-center">
-                        <img src={projImg3} style={{width: "320px"}} alt="project_img3"></img>
-                    </Col>
-                    <Col xs={12} md={6} xl={7}>
-                        <h2>{projects[2].title}</h2>
-                        <h6>{projects[2].desc}</h6>
-                        <p>{projects[2].skill}</p>
-                        <span>{projects[2].type}</span>
+                    <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                        <Nav variant="pills" defaultActiveKey="/home">
+                            <Nav.Item>
+                                <Nav.Link eventKey="first">Work 1</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="second">Work 2</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="third">Work 3</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                        <Tab.Content className="card-body">
+                            <Tab.Pane eventKey="first">
+                                <Row>
+                                <Col xs={12} md={6} xl={5} className="d-flex justify-content-center">
+                                    <img src={projImg1} style={{width: "320px"}} alt="project_img1"></img>
+                                </Col>
+                                <Col xs={12} md={6} xl={7}>
+                                    <h2>{projects[0].title}</h2>
+                                    <h6>{projects[0].desc}</h6>
+                                    <p>{projects[0].skill}</p>
+                                </Col>
+                                </Row>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="second">
+                                <Row>
+                                <Col xs={12} md={6} xl={5} className="d-flex justify-content-center">
+                                    <img src={projImg2} style={{width: "300px"}} alt="project_img2"></img>
+                                </Col>
+                                <Col xs={12} md={6} xl={7}>
+                                    <h2>{projects[1].title}</h2>
+                                    <h6>{projects[1].desc}</h6>
+                                    <p>{projects[1].skill}</p>
+                                    <span>{projects[1].type}</span>                        
+                                </Col>
+                                </Row>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="third">
+                                <Row>
+                                <Col xs={12} md={6} xl={5} className="d-flex justify-content-center">
+                                    <img src={projImg3} style={{width: "320px"}} alt="project_img3"></img>
+                                </Col>
+                                <Col xs={12} md={6} xl={7}>
+                                    <h2>{projects[2].title}</h2>
+                                    <h6>{projects[2].desc}</h6>
+                                    <p>{projects[2].skill}</p>
+                                    <span>{projects[2].type}</span>
+                                </Col>
+                                </Row>
+                            </Tab.Pane>
+                        </Tab.Content>
+                        </Tab.Container>
                     </Col>
                 </Row>
             </Container>
         </section>
-    )
+      
+    );
 }
