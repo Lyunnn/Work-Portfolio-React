@@ -158,6 +158,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .my-name {
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 25px;
   color: #C26DBC;
 }
 
@@ -368,6 +371,53 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid #c0c0c0;
   border-radius: 0px 10px 0px 0px;
 }
+
+/* Footer CSS */
+.footer{
+  background-color: #f7f7f7;
+}
+
+.footer h6, p {
+  text-align: left;
+}
+
+.footer h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, #F43F5E, #C26DBC, #7E94D9);
+  background: -o-linear-gradient(right, #F43F5E, #C26DBC, #7E94D9);
+  background: -moz-linear-gradient(right, #F43F5E, #C26DBC, #7E94D9);
+  background: linear-gradient(to right, #F43F5E, #C26DBC, #7E94D9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer h6 {
+  font-size: 16px;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer a:link {
+  color: #303030;
+}
+
+.footer a:hover {
+  color: #96b0ff;
+}
+
+.footer a:active {
+  color: #7E94D9;
+}
+
+.footer a:visited {
+  color: #7E94D9;
+}
+
 
 
 /* **************************************************************************************** */
