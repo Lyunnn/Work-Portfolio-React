@@ -15,7 +15,7 @@ export const Footer = () => {
                         <p>linyunkee0120@gmail.com</p>
                         
                     </Col>
-                    <Col xs={12} md={4} xl={3} className="mt-xl-4 mt-2 text-center">
+                    <Col xs={12} md={4} xl={3} className="mt-md-4 mt-2 text-center">
                         <h6>Code</h6>
                         <p><a href="https://github.com/Lyunnn">GitHub</a></p>
                     </Col>

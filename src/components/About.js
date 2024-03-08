@@ -9,7 +9,7 @@ export const About = () => {
                         <h1 className="card-title">About Me</h1>
                         <div className="rectangle"></div>
                     </Col>
-                    <Col xs={12} md={8} xl={8}>
+                    <Col xs={12} md={8} xl={8} className="mt-4 mt-md-0">
                         <p className="card-text">
                             With a keen interest in mobile app development, web design, and software engineering, I embarked on this journey after graduating from high school. I chose to pursue a major in software development as it aligns perfectly with my passion and desired career path.
                         </p>

@@ -246,17 +246,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill h5 {
   font-weight: bold;
   padding-top: 40px;
+  padding-bottom: 15px;
   font-size: 18px;
 }
 
 .skill p {
   font-weight: 400;
   font-size: 14px;
+  padding-bottom: 8px;
 }
 
-.skill .card-body {
-  padding: 0 40px 20px 40px;
+.skill h5, .skill p {
+  max-width: 50%;
+  text-align: left;
+  margin: auto;
 }
+
 
 /* Projects CSS */
 .project {

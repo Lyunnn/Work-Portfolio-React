@@ -54,7 +54,7 @@ export const Banner = () => {
                              majoring in software development
                         </p>
                     </Col>
-                    <Col xs={12} md={6} xl={5} className="d-flex justify-content-end">
+                    <Col xs={12} md={6} xl={5} className="d-flex justify-content-md-end justify-content-center">
                         <img src={headerImg} style={{maxWidth: "400px", minWidth:"300px"}} className="responsive" alt="Header Img"/>
                     </Col>
                 </Row>
