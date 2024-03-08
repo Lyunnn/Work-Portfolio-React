@@ -1,3 +1,5 @@
+@mixin mobile
+
 /* Custom Fonts */
 @font-face {
   font-family: Rubik;
@@ -9,12 +11,6 @@
   font-family: Rubik;
   src: url("./assets/font/Rubik-Regular.ttf");
   font-weight: 400;
-}
-
-@font-face {
-  font-family: Rubik;
-  src: url("./assets/font/Rubik-Light.ttf");
-  font-weight: 300;
 }
 
 /* Default CSS */
@@ -374,11 +370,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Footer CSS */
 .footer{
-  background-color: #f7f7f7;
-}
-
-.footer h6, p {
-  text-align: left;
+  background-color: #FBFBFC;
 }
 
 .footer h1 {
@@ -416,48 +408,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .footer a:visited {
   color: #7E94D9;
-}
-
-
-
-/* **************************************************************************************** */
-
-/* .App {
-  text-align: center;
-} */
-
-/* Below can be deleted */
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

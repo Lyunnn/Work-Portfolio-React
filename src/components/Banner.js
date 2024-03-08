@@ -45,7 +45,7 @@ export const Banner = () => {
     return (
         <section className="banner" id="home">
             <Container>
-                <Row className="align-items-center">
+                <Row className="align-items-center px-1 px-lg-0">
                     <Col xs={12} md={6} xl={7}>
                         <h2>{`HI, I'M`} <span className='my-name'>LIN YUN</span></h2>
                         <h1>A JUNIOR DEV{text}</h1>
@@ -55,7 +55,7 @@ export const Banner = () => {
                         </p>
                     </Col>
                     <Col xs={12} md={6} xl={5} className="d-flex justify-content-end">
-                        <img src={headerImg} style={{width: "400px"}} alt="Header Img"/>
+                        <img src={headerImg} style={{maxWidth: "400px", minWidth:"300px"}} className="responsive" alt="Header Img"/>
                     </Col>
                 </Row>
             </Container>
